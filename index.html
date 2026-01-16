@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ro">
 <head>
@@ -10,23 +9,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #fff5f8;
             margin: 0;
-            padding: 0;
         }
 
-        /* MENIU SUS */
+        /* MENIU */
         .menu {
-            background-color: #ffffff;
+            position: sticky;
+            top: 0;
+            background: #ffffff;
             padding: 12px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 100;
         }
 
         .menu h2 {
@@ -35,28 +38,28 @@
         }
 
         .menu a {
-            margin-left: 15px;
-            color: #555;
-            font-size: 20px;
+            margin-left: 20px;
             text-decoration: none;
+            color: #555;
+            font-weight: bold;
         }
 
         .menu a:hover {
             color: #d63384;
         }
 
-        /* CONTAINER */
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
+        /* SECTIUNI */
+        .section {
+            max-width: 1000px;
+            margin: 40px auto;
             background: #ffffff;
-            padding: 20px;
+            padding: 30px;
             border-radius: 14px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             text-align: center;
         }
 
-        h1 {
+        h1, h3 {
             color: #d63384;
         }
 
@@ -89,12 +92,8 @@
             margin-top: 8px;
         }
 
-        /* ICONS CONTACT */
-        .contact {
-            margin-top: 30px;
-        }
-
-        .contact a {
+        /* CONTACT */
+        .contact-icons a {
             margin: 0 15px;
             font-size: 32px;
             color: #ffffff;
@@ -107,7 +106,7 @@
         .instagram { background-color: #E1306C; }
         .facebook { background-color: #1877f2; }
 
-        .contact a:hover {
+        .contact-icons a:hover {
             opacity: 0.85;
         }
     </style>
@@ -119,18 +118,24 @@
     <div class="menu">
         <h2>CrochetToys</h2>
         <div>
-            <a href="#produse"><i class="fa-solid fa-heart"></i></a>
-            <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#acasa">Acasă</a>
+            <a href="#produse">Produse</a>
+            <a href="#contact">Contact</a>
         </div>
     </div>
 
-    <!-- CONTINUT -->
-    <div class="container">
-        <h1>Jucării croșetate manual</h1>
-        <p>Realizate cu dragoste 💖. Comenzi personalizate.</p>
+    <!-- ACASA -->
+    <div id="acasa" class="section">
+        <h1>Bine ați venit la CrochetToys</h1>
+        <p>Jucării croșetate manual, realizate cu dragoste 💖</p>
+        <p>Comenzi personalizate pentru cei mici</p>
+    </div>
 
-        <!-- GALERIE -->
-        <div id="produse" class="gallery">
+    <!-- PRODUSE -->
+    <div id="produse" class="section">
+        <h3>Produsele noastre</h3>
+
+        <div class="gallery">
             <div class="item">
                 <img src="toy1.JPG" alt="Păpușa Elsa">
                 <p>Păpușa Elsa & Olaf</p>
@@ -143,9 +148,14 @@
                 <p class="price">100 RON</p>
             </div>
         </div>
+    </div>
 
-        <!-- CONTACT -->
-        <div id="contact" class="contact">
+    <!-- CONTACT -->
+    <div id="contact" class="section">
+        <h3>Contact</h3>
+        <p>Pentru comenzi, ne poți contacta aici:</p>
+
+        <div class="contact-icons">
             <a class="whatsapp" href="https://wa.me/40754586363" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
@@ -162,3 +172,4 @@
 
 </body>
 </html>
+
