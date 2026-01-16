@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pagina mea</title>
+  <title>crochetToys – Păpuși Handmade</title>
 
   <style>
     body {
@@ -14,41 +14,78 @@
       justify-content: center;
       align-items: center;
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      background: #fff3f5;
       text-align: center;
-    }
-
-    img {
-      width: 200px;
-      border-radius: 50%;
-      margin-bottom: 20px;
+      padding: 20px;
     }
 
     h1 {
-      margin-bottom: 15px;
+    
+      color: #c94f7c;
+      margin-bottom: 10px;
     }
 
-    button {
-      background: #25D366;
+    p {
+      max-width: 400px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    img {
+      width: 220px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      text-decoration: none;
       color: white;
-      border: none;
-      padding: 15px 25px;
-      font-size: 16px;
+      padding: 14px 22px;
       border-radius: 30px;
-      cursor: pointer;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .whatsapp {
+      background: #25D366;
+    }
+
+    .facebook {
+      background: #1877F2;
     }
   </style>
 </head>
 
 <body>
 
-  <h1>Sergiu</h1>
+  <h1>crochetToys 🧸</h1>
 
-  <img src="index.jpg" alt="Poza mea">
+  <p>
+    Păpuși handmade croșetate cu multă grijă și iubire.
+    Fiecare jucărie este unică și realizată manual.
+  </p>
 
-  <a href="https://wa.me/40755327752" target="_blank">
-    <button>Contactează-mă pe WhatsApp</button>
-  </a>
+  <!-- Schimbă numele pozei cu una dintre pozele tale -->
+  <img src="index.jpg" alt="Păpuși handmade crochet">
+
+  <div class="buttons">
+    <!-- WhatsApp -->
+    <a class="btn whatsapp" href="https://wa.me/40755327752" target="_blank">
+      WhatsApp
+    </a>
+
+    <!-- Facebook -->
+    <a class="btn facebook" href="https://facebook.com/" target="_blank">
+      Facebook
+    </a>
+  </div>
 
 </body>
 </html>
